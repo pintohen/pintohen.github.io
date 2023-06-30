@@ -1,0 +1,25 @@
+#footerText {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.footerText {
+    opacity: 1;
+    text-decoration: none;
+}
+
+.footerText:hover {
+    opacity: 0.6;
+    text-decoration: none;
+}
+
+.footerButton {
+    padding: 3px;
+}
+
+@media (max-width: 768px) {
+    #footerText {
+        font-size: 20px;
+    }
+}
