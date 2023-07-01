@@ -13,7 +13,7 @@ function App() {
   let aboutMeTitle = 'Henrique Pinto | About Me';
 
   return (
-    <>
+    <div className='app-container'>
       <Router>
         <nav className="navbar fixed-top">
           <a className="navbarLinks closingTag">
@@ -34,7 +34,7 @@ function App() {
 
         <a onClick={goToTop} id="back-to-start"><img src="src/images/go-up-arrow.png"/></a>
       </Router>
-    </>
+    </div>
   )
 }
 
