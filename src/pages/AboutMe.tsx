@@ -19,13 +19,12 @@ function AboutMe(props: {title: string}) {
         };
     }, [props.title]);
 
-
     return (
         <>
             <div className="aboutMeTextAndImage">
                 <img src="src/images/computer-image.png" alt="computer-image.png" id="computer-image"></img>
                 <h1 className="aboutMeText">
-                    If you're here, you're curious to know a little bit more about me. I am working towards becoming a software enginner, currently studying at <a href="https://www.isep.ipp.pt/Course/Course/26" target="_blank" className="reference"><i>ISEP</i></a> and love the tech industry. To know more about me, check my socials and my <a href="src/images/coming-soon.jpg" download target="_blank" className="reference"><i>Curriculum Vitae</i></a>.
+                    If you're here, you're curious to know a little bit more about me. I am working towards becoming a software enginner, currently studying at <a href="https://www.isep.ipp.pt/Course/Course/26" target="_blank" className="reference"><i>ISEP</i></a> and love the tech industry. To know more about me, check my socials and my <a href="src\cv\Henrique_Pinto_CV.pdf" download target="_blank" className="reference"><i>Curriculum Vitae</i></a>.
                 </h1>
             </div>
             <div id="techStacks">
