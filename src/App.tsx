@@ -1,33 +1,28 @@
 import './App.css';
 
-import { BrowserRouter as Router, Routes as Switch, Route, Link } from 'react-router-dom';
+import {BrowserRouter as Router, Routes as Switch, Route} from 'react-router-dom';
 
 import Home from './pages/Home';
 import AboutMe from './pages/AboutMe';
 
 
 import EndFooter from './components/EndFooter';
+import EarthMoon from "./pages/EarthMoon.tsx";
+import Navbar from "./components/Navbar.tsx";
+import ThreeJSDemos from "./pages/ThreeJSDemos.tsx";
 
 function App() {
-  let homeTitle = 'Henrique Pinto | Home';
-  let aboutMeTitle = 'Henrique Pinto | About Me';
 
   return (
     <div className='app-container'>
       <Router>
-        <nav className="navbar fixed-top">
-          <a className="navbarLinks closingTag">
-            &lt;&#47;&gt; 
-          </a>
-          <Link to="/" className="navbarLinks">Home</Link>
-          <Link to="/about-me" className="navbarLinks">About Me</Link>
-          <Link to="https://github.com/pintohen" target="_blank" className="navbarLinks">My GitHub</Link>
-          <Link to="https://www.linkedin.com/in/henrique-pinto-66b714240" target="_blank" className="navbarLinks">My LinkedIn</Link>
-        </nav>
+        <Navbar />
 
         <Switch>
-          <Route path="/about-me" element={<AboutMe title={aboutMeTitle}/>} />
-          <Route path="/" element={<Home title={homeTitle} />} />
+          <Route path="/about-me" element={<AboutMe />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/three-js-demos" element={<ThreeJSDemos />} />
+          <Route path="/earth-moon-three" element={<EarthMoon />} />
         </Switch>
 
         <EndFooter />

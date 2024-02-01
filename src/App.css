@@ -55,11 +55,17 @@ body{
   background-color: #0cebeb;
   background-color: -webkit-linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb);
   background-color: linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb);
+  transition: 0.5s;
+}
+
+#back-to-start > img:hover {
+  scale: 1.1;
+  transition: 0.5s;
 }
 
 @media (max-width: 768px) {
   .navbarLinks{
-    font-size: 110%;
+    font-size: 100%;
   }
 
   #back-to-start > img {
