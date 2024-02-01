@@ -6,12 +6,12 @@ function ThreeJSDemos() {
     const routes: CardProps[] = [
         {
             title: 'Earth & Moon',
-            image: 'three-routes/earth-moon.png',
+            image: 'src/images/three-routes/earth-moon.png',
             route: '/earth-moon-three',
         },
         {
             title: 'Under development... ',
-            image: 'three-routes/coming-soon.jpg',
+            image: 'src/images/three-routes/coming-soon.jpg',
             route: '/three-js-demos',
         },
         {

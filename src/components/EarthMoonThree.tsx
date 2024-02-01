@@ -100,7 +100,7 @@ function EarthMoonThree() {
         function setupEarthTextures() {
             // main texture
             const texture = new THREE.TextureLoader()
-                .load('earth-moon/earthmap1k.jpg');
+                .load('src/images/earth-moon/earthmap1k.jpg');
             material.map = texture;
 
             // bump map
