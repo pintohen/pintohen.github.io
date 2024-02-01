@@ -84,12 +84,12 @@ function EarthMoonThree() {
         function setupMoonTextures() {
             // main texture
             const texture = new THREE.TextureLoader()
-                .load('earth-moon/moonmap1k.jpg');
+                .load('src/images/earth-moon/moonmap1k.jpg');
             materialMoon.map = texture;
 
             // bump map
             const textureBump = new THREE.TextureLoader()
-                .load('earth-moon/moonbump1k.jpg');
+                .load('src/images/earth-moon/moonbump1k.jpg');
             materialMoon.bumpMap = textureBump;
             materialMoon.bumpScale = 1.3;
         }
@@ -105,7 +105,7 @@ function EarthMoonThree() {
 
             // bump map
             const textureBump = new THREE.TextureLoader()
-                .load('earth-moon/earthbump1k.jpg');
+                .load('src/images/earth-moon/earthbump1k.jpg');
             material.bumpMap = textureBump;
             material.bumpScale = 1.5;
         }
@@ -115,7 +115,7 @@ function EarthMoonThree() {
         // alpha texture for cloud mapping
         let geometryCloud = new THREE.SphereGeometry(20.2, 41, 41);
         const textureClouds = new THREE.TextureLoader()
-            .load('earth-moon/earthcloudmap.jpg');
+            .load('src/images/earth-moon/earthcloudmap.jpg');
         let materialCloud = new THREE.MeshStandardMaterial({
             color: 0xffffff, emissive: 0x010101,
             metalness: 0.1, roughness: 0.7,

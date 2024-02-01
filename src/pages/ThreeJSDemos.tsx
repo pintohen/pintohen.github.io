@@ -16,12 +16,12 @@ function ThreeJSDemos() {
         },
         {
             title: 'Under development... ',
-            image: 'three-routes/coming-soon.jpg',
+            image: 'src/images/three-routes/coming-soon.jpg',
             route: '/three-js-demos',
         },
         {
             title: 'Under development... ',
-            image: 'three-routes/coming-soon.jpg',
+            image: 'src/images/three-routes/coming-soon.jpg',
             route: '/three-js-demos',
         },
     ];
