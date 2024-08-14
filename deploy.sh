@@ -6,4 +6,4 @@ cp index-prod.html index.html
 
 git add .
 git commit -m "build: deploy commit at $(date)"
-git push origin master
+git push origin main
