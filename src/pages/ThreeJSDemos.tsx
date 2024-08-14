@@ -2,30 +2,6 @@ import {Link} from "react-router-dom";
 import './ThreeJSDemos.css';
 
 function ThreeJSDemos() {
-
-    const routes: CardProps[] = [
-        {
-            title: 'Earth & Moon',
-            image: 'src/images/three-routes/earth-moon.png',
-            route: '/earth-moon-three',
-        },
-        {
-            title: 'Under development... ',
-            image: 'src/images/three-routes/coming-soon.jpg',
-            route: '/three-js-demos',
-        },
-        {
-            title: 'Under development... ',
-            image: 'src/images/three-routes/coming-soon.jpg',
-            route: '/three-js-demos',
-        },
-        {
-            title: 'Under development... ',
-            image: 'src/images/three-routes/coming-soon.jpg',
-            route: '/three-js-demos',
-        },
-    ];
-
     return (
         <>
             <div>
@@ -43,12 +19,6 @@ function ThreeJSDemos() {
             </div>
         </>
     );
-}
-
-interface CardProps {
-    title: string;
-    image: string;
-    route: string;
 }
 
 function Card(props: CardProps) {
@@ -72,6 +42,35 @@ function Card(props: CardProps) {
             </div>
         </Link>
     );
+}
+
+const routes: CardProps[] = [
+    {
+        title: 'Earth & Moon',
+        image: 'src/images/three-routes/earth-moon.png',
+        route: '/earth-moon-three',
+    },
+    {
+        title: 'Under development... ',
+        image: 'src/images/three-routes/coming-soon.jpg',
+        route: '/three-js-demos',
+    },
+    {
+        title: 'Under development... ',
+        image: 'src/images/three-routes/coming-soon.jpg',
+        route: '/three-js-demos',
+    },
+    {
+        title: 'Under development... ',
+        image: 'src/images/three-routes/coming-soon.jpg',
+        route: '/three-js-demos',
+    },
+];
+
+interface CardProps {
+    title: string;
+    image: string;
+    route: string;
 }
 
 export default ThreeJSDemos;

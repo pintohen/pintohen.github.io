@@ -7,9 +7,9 @@ import AboutMe from './pages/AboutMe';
 
 
 import EndFooter from './components/EndFooter';
-import EarthMoon from "./pages/EarthMoon.tsx";
 import Navbar from "./components/Navbar.tsx";
 import ThreeJSDemos from "./pages/ThreeJSDemos.tsx";
+import EarthMoonThree from "./components/EarthMoonThree.tsx";
 
 function App() {
 
@@ -22,7 +22,7 @@ function App() {
           <Route path="/about-me" element={<AboutMe />} />
           <Route path="/" element={<Home />} />
           <Route path="/three-js-demos" element={<ThreeJSDemos />} />
-          <Route path="/earth-moon-three" element={<EarthMoon />} />
+          <Route path="/earth-moon-three" element={<EarthMoonThree />} />
         </Switch>
 
         <EndFooter />

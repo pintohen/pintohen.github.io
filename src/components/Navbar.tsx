@@ -15,47 +15,54 @@ function Navbar() {
         document.title = `Henrique Pinto | ${routeToTitle[location.pathname] || 'Page Not Found'}`;
     }, [location.pathname]);
 
-
     return (
         <nav id="navbar" className="navbar fixed-top">
             <a className="navbarLinks closingTag">
                 &lt;&#47;&gt;
             </a>
-            <Link
-                to="/"
-                className="navbarLinks"
-            >
-                Home
-            </Link>
-            <Link
-                to="/about-me"
-                className="navbarLinks"
-            >
-                About Me
-            </Link>
-            <Link
-                to="https://github.com/pintohen"
-                target="_blank"
-                className="navbarLinks"
-
-            >
-                My GitHub
-            </Link>
-            <Link
-                to="https://www.linkedin.com/in/henrique-pinto-66b714240"
-                target="_blank"
-                className="navbarLinks"
-            >
-                My LinkedIn
-            </Link>
-            <Link
-                to="/three-js-demos"
-                className="navbarLinks"
-            >
-                ThreeJS
-            </Link>
+            {navbarLinks.map((navbarElement, index) => (
+                <Link
+                    key={index}
+                    to={navbarElement.link}
+                    target={navbarElement.target}
+                    className="navbarLinks"
+                >
+                    {navbarElement.name}
+                </Link>
+            ))}
         </nav>
     );
+}
+
+const navbarLinks: NavbarElement[] = [
+    {
+        name: 'Home',
+        link: '/',
+    },
+    {
+        name: 'About Me',
+        link: '/about-me',
+    },
+    {
+        name: 'My GitHub',
+        link: 'https://github.com/pintohen',
+        target: '_blank'
+    },
+    {
+        name: 'My LinkedIn',
+        link: 'https://www.linkedin.com/in/henrique-pinto-66b714240',
+        target: '_blank'
+    },
+    {
+        name: 'ThreeJS',
+        link: '/three-js-demos',
+    },
+];
+
+interface NavbarElement {
+    name: string;
+    link: string;
+    target?: string;
 }
 
 export default Navbar;
